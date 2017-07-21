@@ -1,7 +1,7 @@
 function readyFn(jQuery) {
   console.log("ready, set, and politic")
 
-
+$('html, body').animate({ scrollTop: 0 }, 'fast');
 
 
   // Changes XML to JSON
@@ -388,7 +388,7 @@ $('.clickName').click(function(e){
                 xAxes: [{
                   ticks: {
                     beginAtZero: true,
-                    fontSize: 22,
+                    fontSize: 20,
                     fontColor: '#4B4B4C',
                     fontFamily: "Helvetica"
 
@@ -562,6 +562,7 @@ $('.clickName').click(function(e){
           $('.stats').empty();
           $('.chart').empty();
           $('.chart').append(`<canvas id="doughnut-chart" width="450" height="450"></canvas>`);
+          $('html, body').animate({ scrollTop: 1200 }, 'fast');
           senatorNum--;
           populateForm(senatorNum - 1);
 
@@ -595,7 +596,8 @@ $('.clickName').click(function(e){
           $('.companyDonationsRank').empty();
           $('.stats').empty();
           $('.chart').empty();
-          $('.chart').append(`<canvas id="doughnut-chart" width="450" height="450"></canvas>`)
+          $('.chart').append(`<canvas id="doughnut-chart" width="450" height="450"></canvas>`);
+          $('html, body').animate({ scrollTop: 1200 }, 'fast');
           populateForm(senatorNum + 1);
           senatorNum++;
 
@@ -610,6 +612,7 @@ $('.clickName').click(function(e){
       // get senators name / num variable set up
 
       $('#findPoli').click(function(event) {
+              $('.barChartTitle').empty();
         $('.pic').empty();
         $('.candidatename').empty();
         $('.party').empty();
@@ -629,7 +632,9 @@ $('.clickName').click(function(e){
         $('.companyDonationsRank').empty();
         $('.stats').empty();
         $('.chart').empty();
+        $('.chartTitle').empty();
         $('.chart').append(`<canvas id="doughnut-chart" width="450" height="450"></canvas>`)
+        $('html, body').animate({ scrollTop: 1200 }, 'fast');
         searchValue = $("#search").val();
         getSenatorNum(searchValue);
 

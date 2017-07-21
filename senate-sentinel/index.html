@@ -26,7 +26,7 @@
     <div class="row">
       <div class="header">
         <div class="bar">
-          <input id="search" type="text" name="search" value="Graham">
+          <input id="search" type="text" name="search" value="Senator Last Name">
         </div>
         <div class="tab" id="findPoli">
           <h3>Search</h3>
@@ -37,6 +37,11 @@
         <div class="tab" id="nextPoli">
           <h3>Next</h3>
         </div>
+        <div class="tab" id="logo">
+          <h3 class="senateLogo">senate</h3><h5 class="sentinelLogo">sentinel</h5>
+
+        </div>
+
       </div>
     </div>
   </div>
@@ -49,74 +54,102 @@
 
   <div class="main container-fluid firstrow">
 
-      <div class="container col-lg-5 col-md-5 col-sm-12">
+    <div class="container col-lg-5 col-md-5 col-sm-12">
 
-        <div class="partisanbox container-fluid">
-          <div class="row">
-            <div class="pic">
+      <div class="partisanbox container-fluid">
+        <div class="row">
+          <div class="pic">
 
+          </div>
+        </div>
+
+        <div class="basicinfo row">
+          <div class="">
+            <div class="candidatename">
             </div>
           </div>
-
-          <div class="basicinfo row">
-            <div class="">
-              <div class="candidatename">
-              </div>
+          <div class="row partyAndState">
+            <div class="col-md-5 col-md-offset-2">
+              <div class="party"></div>
             </div>
-            <div class="row partyAndState">
-              <div class="col-md-5 col-md-offset-2">
-                <div class="party"></div>
-              </div>
-              <div class="col-md-5">
-                <div class="state"></div>
-              </div>
+            <div class="col-md-5">
+              <div class="state"></div>
             </div>
-              <div class="row nextElectionRow">
-                <div class="col-md-10 col-md-offset-2">
-                  <div class="nextElection"></div>
-                </div>
-              </div>
-              <div class="row senorityRow">
-                <div class="col-md-10 col-md-offset-2">
-                  <div class="senority"></div>
-                </div>
-              </div>
-              <div class="row missed_votes_pctRow">
-                <div class="col-md-10 col-md-offset-2">
-                  <div class="missed_votes_pct"></div>
-                </div>
-              </div>
-              <div class="row dwNominateRow">
-                <div class="col-md-10 col-md-offset-2">
-                  <div class="dwNominate"></div>
-                </div>
-              </div>
-              <div class="row dwNominateRow1">
-                <div class="col-md-10 col-md-offset-2">
-                  <!-- <div class="dwNominate1"></div> -->
-                </div>
-              </div>
-              <div class="row voteWPartyRow">
-                <div class="col-md-10 col-md-offset-2">
-                  <div class="voteWParty"></div>
-                </div>
-              </div>
-              <div class="row voteWPartyAveRow">
-                <div class="col-md-10 col-md-offset-2">
-                  <!-- <div class="voteWPartyAve"></div> -->
-                </div>
-              </div>
-              <div class="row nameAndSocialIcons">
-                <div class="col-md-12 socialmedia">
-                  <div class="email"></div>
-                  <div class="fb"></div>
-                  <div class="twitter"></div>
-                </div>
-              </div>
+          </div>
+          <div class="row nextElectionRow">
+            <div class="col-md-10 col-md-offset-2">
+              <div class="nextElection"></div>
+            </div>
+          </div>
+          <div class="row senorityRow">
+            <div class="col-md-10 col-md-offset-2">
+              <div class="senority"></div>
+            </div>
+          </div>
+          <div class="row missed_votes_pctRow">
+            <div class="col-md-10 col-md-offset-2">
+              <div class="missed_votes_pct"></div>
+            </div>
+          </div>
+          <div class="row dwNominateRow">
+            <div class="col-md-10 col-md-offset-2">
+              <div class="dwNominate"></div>
+            </div>
+          </div>
+          <div class="row dwNominateRow1">
+            <div class="col-md-10 col-md-offset-2">
+              <!-- <div class="dwNominate1"></div> -->
+            </div>
+          </div>
+          <div class="row voteWPartyRow">
+            <div class="col-md-10 col-md-offset-2">
+              <div class="voteWParty"></div>
+            </div>
+          </div>
+          <div class="row voteWPartyAveRow">
+            <div class="col-md-10 col-md-offset-2">
+              <!-- <div class="voteWPartyAve"></div> -->
+            </div>
+          </div>
+          <div class="row nameAndSocialIcons">
+            <div class="col-md-12 socialmedia">
+              <div class="email"></div>
+              <div class="fb"></div>
+              <div class="twitter"></div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+        <div class="col-md-6 col-md-offset-6 col-lg-6 col-lg-offset-6 bigbox">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-6">
+              <div class='republicanBox  redbox'>
+              </div>
+            </div>
+            <div class="col-md-6 indiDem ">
+              <div class="independentBox">
+              </div>
+              <div class="democratBox bluebox">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
 
 
   </div>
@@ -126,66 +159,46 @@
     <div class="row outermostSeconRow">
       <div class="col-lg-5 col-md-5 col-sm-12" id=" info ">
       </div>
-        <div class="container col-lg-7 col-md-7 col-sm-12 ">
-          <div class="row barChartRow">
-            <div class="col-md-12">
-              <div class="barChartTitle">
-              </div>
-              <div class="barChartDiv">
-                <canvas id="barChart" width="400" height="300"></canvas>
-              </div>
+      <div class="container col-lg-7 col-md-7 col-sm-12 ">
+        <div class="row barChartRow">
+          <div class="col-md-12">
+            <div class="barChartTitle">
+            </div>
+            <div class="barChartDiv">
+              <canvas id="barChart" width="400" height="300"></canvas>
             </div>
           </div>
-          <div class="row topTenStats ">
-            <div class="row forTopTenTitle ">
-              <div class="col-md-11 col-md-offset-1 ">
-                <div class="topTenTitle "></div>
-              </div>
-            </div>
-            <div class="row forTopTenInfo ">
-              <div class="col-md-7 col-md-offset-1 ">
-                <div class="companyNames "></div>
-              </div>
-              <div class="col-md-1 ">
-                <div class="companyDonationsRank "></div>
-              </div>
-              <div class="col-md-2 ">
-                <div class="companyDonations"></div>
-              </div>
+        </div>
+        <div class="row topTenStats ">
+          <div class="row forTopTenTitle ">
+            <div class="col-md-11 col-md-offset-1 ">
+              <div class="topTenTitle "></div>
             </div>
           </div>
-          <div class="chartTitle">
-
+          <div class="row forTopTenInfo ">
+            <div class="col-md-7 col-md-offset-1 ">
+              <div class="companyNames "></div>
+            </div>
+            <div class="col-md-1 ">
+              <div class="companyDonationsRank "></div>
+            </div>
+            <div class="col-md-2 ">
+              <div class="companyDonations"></div>
+            </div>
           </div>
-         <div class=" chart ">
-           <canvas id="doughnut-chart" width="450" height="450"></canvas>
-         </div>
+        </div>
+        <div class="chartTitle">
 
         </div>
-      </div>
-    </div>
-
-    <div class="main container-fluid tempitems">
-      <div class="col-md-7 col-md-offset-5 col-lg-7 col-lg-offset-5 col-sm-12">
-        <div class="row">
-          <div class="col-md-6">
-            <div class='republicanBox'>
-
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="democratBox">
-              <div class="independentBox">
-
-              </div>
-            </div>
-          </div>
-
-
+        <div class=" chart ">
+          <canvas id="doughnut-chart" width="450" height="450"></canvas>
+        </div>
 
       </div>
-
     </div>
+  </div>
+
+
 
 
 
